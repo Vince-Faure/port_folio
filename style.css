@@ -1,0 +1,95 @@
+/*--Feuille de style Cv */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: auto;
+
+    list-style: none;
+    
+
+
+}
+
+/*--BODY--*/
+body {
+    margin: auto;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/*--HEADER--*/
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+
+}
+
+#logoFrame {
+
+    width: 10%;
+    height: auto !important;
+}
+
+#logo {
+    max-width: fit-content;
+    height: auto;
+}
+
+#siteTitle {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#navList {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*--MAIN--*/
+
+main {
+    position: fixed !important;
+    margin-top: 10%;
+    width: 98%;
+    height: 70%;
+    border: 2px solid red;
+
+    overflow-x: scroll;
+    overflow-x: hidden;
+}
+
+
+.mainSection {
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    height: 100%;
+    overflow-x: scroll;
+    border: 2px solid black;
+    overflow-x: hidden;
+}
+
+
+.subMainSection {
+    width: 98%;
+    height: 100%;
+    border: 2px solid blue
+}
+
+/*--FOOTER--*/
+
+footer {
+    position: fixed;
+    bottom: 2%;
+    height: 5%;
+}
