@@ -14,6 +14,7 @@
 
 
 }
+/*--Général Styles--*/
 
 /*--BODY--*/
 body {
@@ -34,6 +35,8 @@ header {
 
 }
 
+/*--logo--*/
+
 #logoFrame {
 
     width: 10%;
@@ -44,6 +47,8 @@ header {
     max-width: fit-content;
     height: auto;
 }
+
+/*--title--*/
 
 #siteTitle {
     text-align: center;
@@ -70,10 +75,13 @@ main {
     overflow-x: hidden;
 }
 
+/*--Main Scroll behaviour--*/
+
 main::-webkit-scrollbar{
     display: none;;
 }
 
+/*--Mainsections--*/
 
 .mainSection {
     margin-left: auto;
@@ -85,6 +93,8 @@ main::-webkit-scrollbar{
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+/*--MainSection scroillbar behaviour--*/
 
 .mainSection::-webkit-scrollbar{
 
