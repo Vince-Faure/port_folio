@@ -61,6 +61,7 @@
     font-weight: var(--basicFont-weight);
 
 
+
 }
 
 /*--Text style settings--*/
@@ -296,6 +297,7 @@ main {
 
     /*--Colors--*/
     background-color: var(--mainColor-Primary_dark);
+    border-radius: 16px;
 
 }
 
