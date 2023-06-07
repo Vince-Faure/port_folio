@@ -8,8 +8,8 @@
 }
 
 @font-face{
-    font-family: "montserrat-regular";
-    src: url("../assets/fonts/Monserrat-Regular.ttf");
+    font-family: "DMSans-regular";
+    src: url("../assets/fonts/DMSans-Regular.ttf");
 }
 
 
@@ -30,7 +30,7 @@
 
     --primaryFont-family:"roboto-regular" ;
 
-    --secondaryFont-family:"montserrat-regular" ;
+    --secondaryFont-family:"DMSans-regular" ;
 
     --basicFont-weight:"normal";
 
