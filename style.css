@@ -7,7 +7,7 @@
     src: url("../assets/fonts/Roboto-Regular.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "DMSans-regular";
     src: url("../assets/fonts/DMSans-Regular.ttf");
 }
@@ -18,8 +18,15 @@
 
 :root {
 
-    /*GLOBAL COLORS--*/
+    /*--TESTS TOOLS--*/
 
+    --testColor-1: red;
+    --testColor-2: blue;
+
+    --testBorder-1: 2px solid red;
+    --testBorder-2: 2px solid blue;
+
+    /*GLOBAL COLORS--*/
     --mainColor-Primary: #8BC34A;
     --mainColor-Primary_dark: #689F38;
     --mainColor-Primary_light: #DCEDC8;
@@ -28,52 +35,51 @@
 
     /*--GLOBAL FONTS--*/
 
-    --primaryFont-family:"roboto-regular" ;
+    --primaryFont-family: "roboto-regular";
+    --secondaryFont-family: "DMSans-regular";
 
-    --secondaryFont-family:"DMSans-regular" ;
+    /*--GLOBAL FONTS-styles-*/
+    --basicFont-weight: "normal";
+    --basicFont-size: 18px;
+    --middleFont-size: 2em;
+    --bigFont-size: 4em;
 
-    --basicFont-weight:"normal";
-
-    --basicFont-size:18px;
-    --middleFont-size :2em;
-    --bigFont-size :4em;
-
-   
 }
 
 
 /*--reset css--*/
 * {
+    /*--RESET OUTSIDE & INSIDE SPACING--*/
     margin: 0;
     padding: 0;
 
+    /*--RESET BASIC FONTS--*/
     font-size: var(--basicFont-size);
     font-family: var(--primaryFont-family);
     font-weight: var(--basicFont-weight);
-   
+
 
 }
 
-/*--Text settings--*/
+/*--Text style settings--*/
 
 /*--Titles--*/
-h1{
-    font-size:var(--bigFont-size) ;
+h1 {
+    font-size: var(--bigFont-size);
 }
-h2, h3{
+
+h2,
+h3 {
     font-size: var(--middleFont-size);
 }
 
-p{
 
-}
-
-/*--BODY--*/
+/*--------------------------------------------BODY--------------------------------------------*/
 
 body {
-    
 
-    /*--Centering--*/
+
+    /*--Outside Spacing--*/
     margin: auto;
 
     /*--Sizing--*/
@@ -82,13 +88,12 @@ body {
     flex-direction: column;
 
     /*--Colors--*/
-
     background-color: var(--mainColor-Primary_light);
 
 
 }
 
-/*--HEADER--*/
+/*--------------------------------------------HEADER--------------------------------------------*/
 
 header {
 
@@ -109,13 +114,13 @@ header {
 
 }
 
-/*--upperHeader--*/
+/*--header div id : upperHeader--*/
 
 #upperHeader {
 
     /*--Positionning*/
-   /* inherit from header.display:flex & header.flex-direction : column--*/
-    
+    /* inherit from header.display:flex & header.flex-direction : column--*/
+
     /*--Display--*/
     display: flex;
     flex-direction: row;
@@ -128,19 +133,21 @@ header {
 
 }
 
-
+/*--header div img id : logo--*/
 
 /*--logo--*/
 
 #logo {
     /*--Positionning*/
-    
+
     /*inherit from upperHeader.display:flex & upperHeader.flex-direction :row & upperHeader.justify-content:space-evenly--*/
 
     /*--Ratio--*/
     max-width: 100%;
     height: auto;
 }
+
+/*--header div span id : sitetitle--*/
 
 /*--title--*/
 
@@ -150,7 +157,8 @@ header {
 
     /*--Content Align--*/
     text-align: center;
-  
+
+    /*--Outside Spacing--*/
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -168,36 +176,80 @@ nav ul li ul li class :  subNavItem
 
 
 #navSection {
-
+    /*--Sizing--*/
     width: 100%;
     height: 20%;
+
+    /*--Outside Spacing--*/
     margin: 0 auto;
+
+    /*--Colors--*/
     background-color: transparent !important;
 }
 
 #navSection a {
-
+    /*--Positionning--*/
     display: block;
+
+    /*--Inside Spacing--*/
+    padding: 10px 0px;
+
+    /*--Text Formating--*/
     text-decoration: none;
     color: black;
+
+    /*--Border Formating--*/
     border-bottom: 2px solid transparent;
-    padding: 10px 0px;
-    ;
+
 }
 
+/*--navSection behaviour on mouse over--*/
+
 #navSection a:hover {
+
+    /*--Text Formating--*/
     color: var(--mainColor-Accent_Color);
+    /*-- Border Formating--*/
     border-bottom: 1px solid black;
 }
 
 
 #navList,
 .subNavList {
-
+    /*--Text Formating--*/
     list-style: none;
 
 }
 
+
+.navItem {
+    /*--Positionning--*/
+    float: left;
+
+    /*--Sizing--*/
+    /*!! add a divider for each item added!!*/
+    width: calc(100%/7);
+
+    /*--Outside Spacing--*/
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    /*--Colors--*/
+    background-color: var(--mainColor-Primary);
+
+    /*--Text Formating--*/
+    text-align: center;
+}
+
+/*--
+    Imported Code :
+    source :https://www.pierre-giraud.com/html-css-apprendre-coder-cours/creation-menu-horizontal-sticky/
+
+    "Comme on applique un float : left à tous nos éléments de liste,
+     nous allons également utiliser le clearfix avec le pseudo-élément ::after
+     que nous allons appliquer à la liste en soi pour éviter que sa hauteur ne soit nulle."
+    
+    --*/
 #navList::after {
 
     content: "";
@@ -205,68 +257,75 @@ nav ul li ul li class :  subNavItem
     clear: both;
 }
 
-.navItem {
-    float: left;
-    width: calc(100%/7);
-
-
-    background-color: var(--mainColor-Primary);
-
-    text-align: center;
-    margin-top: 0%;
-    margin-bottom: 0%;
-
-}
-
-
+/*--SubMenu Behaviour--*/
 
 .subNavList {
-
+    /*--Display--*/
+    /*--Sub Menu is hidden--*/
     display: none;
 
 }
 
 nav>ul li:hover .subNavList {
+    /*--Display--*/
+    /*--Sub menu developps--*/
     display: block;
 }
 
-/*--MAIN--*/
+/*--------------------------------------------MAIN--------------------------------------------*/
 
 main {
+    /*--Positionning--*/
     position: fixed !important;
-    z-index: 0;
+
+    /*--Outside Spacing--*/
     margin-top: 10%;
 
+    /*-- Overlap element--*/
+    z-index: 0;
+
+    /*--Sizing--*/
     width: 100%;
     height: 70%;
 
-    background-color: var(--mainColor-Primary_dark);
-
+    /*--Display- Scroll-*/
     overflow-x: scroll;
     overflow-x: hidden;
+
+    /*--Colors--*/
+    background-color: var(--mainColor-Primary_dark);
+
 }
 
-/*--Main Scroll behaviour--*/
+/*--Main Scroll Hidden--*/
 
 main::-webkit-scrollbar {
     display: none;
-    ;
+
 }
 
 /*--Mainsections--*/
 
 .mainSection {
+/*--Outside Spacing--*/
     margin-left: auto;
     margin-right: auto;
+
+/*--Sizing--*/
     width: 100%;
     height: 100%;
-    overflow-x: scroll;
-    background-color: var(--mainColor-Primary);
+    
+
+    /*--Display- Scroll-*/
     overflow-x: hidden;
     overflow-y: scroll;
+
+    /*--Colors--*/
+    background-color: var(--mainColor-Primary);
+
 }
 
-/*--MainSection scroillbar behaviour--*/
+/*--MainSection Scroll Hidden--*/
 
 .mainSection::-webkit-scrollbar {
 
@@ -276,33 +335,58 @@ main::-webkit-scrollbar {
 /*--subMainSection--*/
 
 .subMainSection {
-        /*--Display--*/
-        display: flex;
-        flex-direction: row;
-    
-        /*--Content Align--*/
-        justify-content: space-evenly;
 
+    /*--Display--*/
+    display: flex;
+    flex-direction: row;
 
+    /*--Content Align--*/
+    justify-content: space-evenly;
+
+    /*--Size--*/
     width: 99%;
     height: 100%;
+
+    /*--Outside Spacing--*/
     margin-left: auto;
     margin-right: auto;
+
+    /*--Colors--*/
     background-color: var(--mainColor-Primary_light);
 }
-.subMainSection div{
-    width: 100%;
+
+.subMainSection div {
+
+/*--Display--*/
     float: left;
-    
+/*--Sizing--*/
+    width: 100%;
+}
+
+.textArea,
+.illustrationArea {
+
+/*--Outside Spacing--*/
+    margin: 0.2em;
+ /*--Border Formating--*/   
+    border-radius: 15px;
+
+
+
 }
 
 .textArea {
-    
+/*--Text Formating--*/
     font-family: var(--secondaryFont-family);
-
-
+    border: var(--testBorder-1)
 }
-/*--FOOTER--*/
+
+.illustrationArea {
+/*--Border Formating--*/
+    border: var(--testBorder-2)
+}
+
+/*--------------------------------------------FOOTER--------------------------------------------*/
 
 footer {
     position: fixed;
