@@ -4,12 +4,12 @@
 /*--FONTS--*/
 @font-face {
     font-family: "roboto-regular";
-    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
+    src: url("../assets/fonts/Roboto-Regular.ttf");
 }
 
 @font-face{
-    font-family:"montserrat-regular";
-    src:url("../assets/fonts/Monserrat/Monserrat-Regular.ttf")
+    font-family: "montserrat-regular";
+    src: url("../assets/fonts/Monserrat-Regular.ttf");
 }
 
 
@@ -30,7 +30,7 @@
 
     --primaryFont-family:"roboto-regular" ;
 
-    --secondaryFont-family:"roboto-regular" ;
+    --secondaryFont-family:"montserrat-regular" ;
 
     --basicFont-weight:"normal";
 
@@ -64,7 +64,9 @@ h2, h3{
     font-size: var(--middleFont-size);
 }
 
+p{
 
+}
 
 /*--BODY--*/
 
@@ -274,17 +276,38 @@ main::-webkit-scrollbar {
 /*--subMainSection--*/
 
 .subMainSection {
+        /*--Display--*/
+        display: flex;
+        flex-direction: row;
+    
+        /*--Content Align--*/
+        justify-content: space-evenly;
+
+
     width: 99%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--mainColor-Primary_dark);
+    background-color: var(--mainColor-Primary_light);
+}
+.subMainSection div{
+    width: 100%;
+    float: left;
+    
 }
 
+.textArea {
+    
+    font-family: var(--secondaryFont-family);
+
+
+}
 /*--FOOTER--*/
 
 footer {
     position: fixed;
+    width: 100%;
     bottom: 2%;
     height: 5%;
+    background-color: var(--mainColor-Primary_dark);
 }
