@@ -1,12 +1,21 @@
 /*--Feuille de style Cv */
-/*--reset css--*/
-* {
-    margin: 0;
-    padding: 0;
 
+
+/*--FONTS--*/
+@font-face {
+    font-family: "roboto-regular";
+    src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 
+@font-face{
+    font-family:"montserrat-regular";
+    src:url("../assets/fonts/Monserrat/Monserrat-Regular.ttf")
+}
+
+
+
 /*--Général Styles--*/
+
 :root {
 
     /*GLOBAL COLORS--*/
@@ -15,11 +24,43 @@
     --mainColor-Primary_dark: #689F38;
     --mainColor-Primary_light: #DCEDC8;
     --mainColor-Accent_Color: #009688;
+
+
+    /*--GLOBAL FONTS--*/
+
+    --primaryFont-family:"roboto-regular" ;
+
+    --secondaryFont-family:"roboto-regular" ;
+
+    --basicFont-weight:"normal";
+
+    --basicFont-size:18px;
+    --middleFont-size :2 rem;
+    --bigFont-size :36px;
+
+   
 }
+
+
+/*--reset css--*/
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: var(--basicFont-size);
+    font-family: var(--primaryFont-family);
+    font-weight: var(--basicFont-weight);
+   
+
+}
+
+/*--h1, h2, h3, h4, h5, h6--*/
+
 
 /*--BODY--*/
 
 body {
+    
 
     /*--Centering--*/
     margin: auto;
@@ -98,6 +139,7 @@ header {
 
     /*--Content Align--*/
     text-align: center;
+    font-size:var(--bigFont-size);
     margin-top: 2%;
     margin-bottom: 2%;
 }
