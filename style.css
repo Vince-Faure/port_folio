@@ -4,61 +4,81 @@
     margin: 0;
     padding: 0;
 
-    width: 100%;
-    height: auto;
-
-    list-style: none;
-
-    
-    
-
-
 }
 /*--Général Styles--*/
+:root{
+
+    /*GLOBAL COLORS--*/
+
+    --mainColor-Primary :#8BC34A ;
+    --mainColor-Primary_dark :#689F38 ;
+    --mainColor-Primary_light :#DCEDC8 ;
+}
+
 
 /*--BODY--*/
+
 body {
+
+/*--Centering--*/
     margin: auto;
+
+/*--Sizing--*/
     width: 98%;
     display: flex;
     flex-direction: column;
+
+    background-color: var(--mainColor-Primary_light);
 
 
 }
 
 /*--HEADER--*/
+
 header {
+
     position: fixed;
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    background-color: var(--mainColor-Primary_dark);
+
+}
+/*--upperHeader--*/
+
+#upperHeader{
+    display: flex;
     flex-direction: row;
-    height: 20%;
+    justify-content: space-evenly;
+
+
 
 }
 
 /*--logo--*/
 
-#logoFrame {
 
-    width: 10%;
-    height: auto !important;
-}
 
 #logo {
-    max-width: fit-content;
+   width: 8%;
     height: auto;
 }
 
 /*--title--*/
 
 #siteTitle {
+    width: 80%;
     text-align: center;
+   justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
 #navList {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    list-style: none;
 
 }
 
@@ -69,7 +89,9 @@ main {
     margin-top: 10%;
     width: 98%;
     height: 70%;
-    border: 2px solid yellow;
+    border: 2px solid black;
+
+    background-color: var(--mainColor-Primary_dark);
 
     overflow-x: scroll;
     overflow-x: hidden;
@@ -90,6 +112,9 @@ main::-webkit-scrollbar{
     height: 100%;
     overflow-x: scroll;
     border: 2px solid black;
+
+    background-color: var(--mainColor-Primary);
+
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -101,13 +126,15 @@ main::-webkit-scrollbar{
     display: none;
 }
 
+/*--subMainSection--*/
 
 .subMainSection {
     width: 98%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid blue
+    border: 2px solid blue;
+    background-color: var(--mainColor-Primary_dark);
 }
 
 /*--FOOTER--*/
