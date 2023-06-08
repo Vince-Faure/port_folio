@@ -27,12 +27,13 @@
     --testBorder-2: 2px solid blue;
 
     /*GLOBAL COLORS--*/
-    --mainColor-Primary: #8BC34A;
-    --mainColor-Primary_dark: #689F38;
-    --mainColor-Primary_light: #DCEDC8;
-    --mainColor-Accent_Color: #009688;
+    --mainColor-Primary:  #6E5E73;
+    --mainColor-Primary_dark: #4E5369;
+    --mainColor-Primary_light: #8A6B76;
+    --mainColor-Accent_Color: #2F4858;
+    --shadowColor-Primary: #2f48588f;
 
-    --shadowColor-Primary: #0000002d;
+    --GlobalBorder-style: 4px solid #2F4858;
 
 
     /*--GLOBAL FONTS--*/
@@ -45,7 +46,7 @@
     --basicFont-size: 18px;
     --middleFont-size: 2em;
     --bigFont-size: 4em;
-
+    --colorFront-bright : #DFE0DF;
 }
 
 
@@ -91,7 +92,7 @@ body {
     flex-direction: column;
 
     /*--Colors--*/
-    background-color: var(--mainColor-Primary_light);
+    background-color: white;
 
 
 }
@@ -164,6 +165,9 @@ header {
     /*--Outside Spacing--*/
     margin-top: 2%;
     margin-bottom: 2%;
+
+    /*--Text Formating--*/
+    color: var(--colorFront-bright)
 }
 
 
@@ -197,9 +201,11 @@ nav ul li ul li class :  subNavItem
     /*--Inside Spacing--*/
     padding: 10px 0px;
 
+
+
     /*--Text Formating--*/
     text-decoration: none;
-    color: black;
+    color: var(--colorFront-bright);
 
     /*--Border Formating--*/
     border-bottom: 2px solid transparent;
@@ -211,9 +217,12 @@ nav ul li ul li class :  subNavItem
 #navSection a:hover {
 
     /*--Text Formating--*/
-    color: var(--mainColor-Accent_Color);
+    color: black;;
     /*-- Border Formating--*/
     border-bottom: 1px solid black;
+
+    /*--Colors--*/
+    background-color: var(--mainColor-Primary_light);
 }
 
 
@@ -238,11 +247,14 @@ nav ul li ul li class :  subNavItem
     margin-bottom: 0%;
 
     /*--Colors--*/
-    background-color: var(--mainColor-Primary);
+    background-color: var(--mainColor-Accent_Color);
 
     /*--Text Formating--*/
     text-align: center;
+    
 }
+
+
 
 /*--
     Imported Code :
@@ -282,7 +294,7 @@ main {
     position: fixed !important;
 
     /*--Outside Spacing--*/
-    margin-top: 10%;
+    margin-top: 11%;
 
     /*-- Overlap element--*/
     z-index: 0;
@@ -296,7 +308,7 @@ main {
     overflow-x: hidden;
 
     /*--Colors--*/
-    background-color: var(--mainColor-Primary_dark);
+    background-color:white;
     border-radius: 16px;
 
 }
@@ -325,7 +337,7 @@ main::-webkit-scrollbar {
     overflow-y: scroll;
 
     /*--Colors--*/
-    background-color: var(--mainColor-Primary);
+    background-color: transparent;
 
 }
 
@@ -356,7 +368,7 @@ main::-webkit-scrollbar {
     margin-right: auto;
 
     /*--Colors--*/
-    background-color: var(--mainColor-Primary_light);
+    background-color: transparent;
 }
 
 .subMainSection div {
@@ -367,6 +379,9 @@ main::-webkit-scrollbar {
     width: 100%;
     /*--Colors--*/
     background-color: var(--shadowColor-Primary);
+    /*--Border Formating--*/
+    border:var(--GlobalBorder-style)
+
 }
 
 .textArea,
