@@ -376,87 +376,7 @@ main::-webkit-scrollbar {
     background-color: transparent;
 }
 
-
-
-#competences{
-    display: flex;
-    flex-direction: column;
-    
-    
-   
-    
-}
-
-.compRow{
-
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: none !important;
-    height:calc(100%/3)
-    
-}
-
-#compRowUp {
-
-
-
-}
-
-.fullCell, .blankCell{
-width: calc(100%/3);
-margin: 8em;
-height: 4em;
-
-}
-
-.fullCell{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width: 100%;
-    margin: 0;
-   
-    
-}
-
-
-.fullCell a{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width: 50%;
-    height: 3em;
-    color: var(--mainColor-Primary_dark);
-    border-radius: 14px !important;
-    text-align: center;
-    text-decoration: none;
-    
-    font-size: var(--intermediateFont-size);
-}
-
-.fullCell a:hover{
-    color: var(--colorFront-bright);
-    background-color: var(--mainColor-Primary);
-}
-
-#titleCell{
-    width: 80%;
-    border-radius: 14px;
-    color: var(--colorFront-bright);
-    background-color: var(--mainColor-Primary_dark);
-}
-
-.blankCell{
-
-    border: none;
-    background-color: transparent !important;
-}
-
-
-
-
+/*--text Area illustrationArea--*/
 
 .textArea,
 .illustrationArea {
@@ -467,8 +387,6 @@ height: 4em;
 
     /*--Border Formating--*/
     border-radius: 14px;
-
-
 
 
 }
@@ -487,87 +405,131 @@ height: 4em;
 }
 
 .textArea p {
-    /*--Outside Spacing--*/
-    margin-left: 4em;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.5em 0em 0.5em  1em;
+   
+
+}
+
+.subMainSection .textArea p{
+
+    font-size: 1em;;
+}
+
+.subMainSection .textArea h3 {
+    font-size: 1.5em;
+ 
 
 }
 
 /*--MainSection Presentation--*/
 
-#presentation .textArea p{
-font-size: 1.5em;
-margin: 0;
-padding: 4em;
-
-
-}
+ 
 
 /*--MainSection Competences--*/
+/*--Compétences menu--*/
 
+#competences{
 
-#competences .textArea{
+    /*--Display--*/
+    display: flex;
+    flex-direction: column;
+    
+}
 
-display: flex ;
-justify-content: space-around;
+.compRow{
+
+    /*--Display--*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /*--Sizing--*/
+    width: 100%;
+    height:calc(100%/3);
+
+    /*--Border Formating--*/
+    border: none !important;
 
 }
-/*
-#compTitle{
+
+
+
+.fullCell, .blankCell{
+
+    /*--Sizing--*/
+    width: calc(100%/3);
+    height: 4em;
+
+    /*--Outside Spacing--*/
+    margin: 8em;
+
+}
+
+.fullCell{
+
+    /*--Display--*/
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:2em;
-    height: 2em;
-    background-color: var(--shadowColor-Light);
-    align-self: center;
 
-}
+    /*--Sizing--*/
+    width: 100%;
 
-
-#compMenu{
-    width: 60%;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    
-    
-
-    background-color: var(--mainColor-Primary_light);
-    list-style: none;
-
-}
-
-#compMenu li{    
-    width: 50%;
-    background-color: var(--mainColor-Primary_dark);
-      
-}
-
-#compMenu li a{
-
-    font-size:2em;
-    background-color: #fff;
-}
-
-#cmi1{
-   margin-left: 4em;
-    
-}
-#cmi2{
-    margin-left: 8em;
-}
-
-#cmi3{
-    margin-left: 8em;
-}
-
-#cmi4{
-    margin-left: 4em;
+    /*--Outside Spacing--*/
+    margin: 0;
    
+    
 }
+
+
+.fullCell a{
+
+    /*--Display--*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /*--Sizing--*/
+    width: 50%;
+    height: 3em;
+
+    /*--Text Formating--*/
+    text-align: center;
+    text-decoration: none;
+    color: var(--mainColor-Primary_dark);
+    font-size: var(--intermediateFont-size);
+
+    /*--Border Formating--*/
+    border-radius: 14px !important;
+    
+}
+
+.fullCell a:hover{
+
+    color: var(--colorFront-bright);
+    background-color: var(--mainColor-Primary);
+}
+
+#titleCell{
+
+    /*--Sizing--*/
+    width: 80%;
+
+    border-radius: 14px;
+    color: var(--colorFront-bright);
+    background-color: var(--mainColor-Primary_dark);
+}
+
+.blankCell{
+
+    border: none;
+    background-color: transparent !important;
+}
+
+
+
 
 
 /*--MainSection Parcours--*/
@@ -584,9 +546,9 @@ justify-content: space-around;
     flex-direction: column;
     text-align: center;
     /*--Colors--*/
-    background-color: var(--shadowColor-Primary);
+    background-color: transparent !important;
     /*--Border Formating--*/
-    border: var(--GlobalBorder-style);
+    border: var(--GlobalBorder-styleLight);
     border-radius: 14px;
 }
 
