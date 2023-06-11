@@ -431,38 +431,69 @@ padding: 4em;
 
 /*--MainSection Competences--*/
 
-#compMenu{
 
-    margin: 0;
-    padding: 4em;
+#competences .textArea{
+
+display: flex ;
+justify-content: space-around;
+
+}
+
+#compTitle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2em;
+    height: 2em;
+    background-color: var(--shadowColor-Light);
+    align-self: center;
+
+}
+
+
+#compMenu{
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
+    
+
+    background-color: var(--mainColor-Primary_light);
     list-style: none;
 
 }
 
-#compMenu li a{    
-    font-size:2em;
-    margin: 1em;
+#compMenu li{    
+    width: 50%;
+    background-color: var(--mainColor-Primary_dark);
+      
 }
 
+#compMenu li a{
 
+    font-size:2em;
+    background-color: #fff;
+}
 
 #cmi1{
-    margin: 1em;
-    padding-left:0em;
+   margin-left: 4em;
+    
 }
 #cmi2{
-    margin: 1em;
-    padding-left:2em;
+    margin-left: 8em;
 }
 
 #cmi3{
-    margin: 1em;
-    padding-left:4em;
+    margin-left: 8em;
 }
 
 #cmi4{
-    margin: 1em;
-    padding-left:6em;
+    margin-left: 4em;
+   
 }
 
 
