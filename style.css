@@ -242,7 +242,7 @@ nav ul li ul li class :  subNavItem
 
     /*--Sizing--*/
     /*!! add a divider for each item added!!*/
-    width: calc(100%/7);
+    width: calc(100%/6);
 
     /*--Outside Spacing--*/
     margin-top: 0%;
@@ -419,6 +419,55 @@ main::-webkit-scrollbar {
 
 }
 
+/*--MainSection Presentation--*/
+
+#presentation .textArea p{
+font-size: 1.5em;
+margin: 0;
+padding: 4em;
+
+
+}
+
+/*--MainSection Competences--*/
+
+#compMenu{
+
+    margin: 0;
+    padding: 4em;
+    list-style: none;
+
+}
+
+#compMenu li a{    
+    font-size:2em;
+    margin: 1em;
+}
+
+
+
+#cmi1{
+    margin: 1em;
+    padding-left:0em;
+}
+#cmi2{
+    margin: 1em;
+    padding-left:2em;
+}
+
+#cmi3{
+    margin: 1em;
+    padding-left:4em;
+}
+
+#cmi4{
+    margin: 1em;
+    padding-left:6em;
+}
+
+
+/*--MainSection Parcours--*/
+
 /*--Table--*/
 
 #chronologie {
@@ -484,7 +533,7 @@ td {
 
 .tableRow:hover td {
 
-    background-color: var(--shadowColor-Light);
+    background-color: var(--mainColor-Primary_light);
     color: var(--colorFront-bright);
 
 }
