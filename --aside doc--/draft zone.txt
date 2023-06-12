@@ -10,3 +10,52 @@ draft zone
 /*--Outside Spacing--*/
  /*--Content Align--*/
  /*-- Overlap element--*/  
+
+
+ #informations{
+    /*--Sizing--*/
+    height: 90%;
+
+    /*--Outside Spacing--*/
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*--Border Formating--*/
+    border: var(--GlobalBorder-styleLight);
+    border-radius: 14px;
+}
+
+#infoText {
+    /*--Sizing--*/
+    width: 80%;
+    height: 60%;
+
+    /*--Outside Spacing--*/
+    margin-top: 4em;
+
+    /*--Text Formating--*/
+    color: var(--mainColor-Accent_Color);
+
+}
+
+#infoText #infoTitle {
+    /*--Outside Spacing--*/
+    margin-top: 1em;
+    margin-left: 3em;
+
+    /*--Text Formating--*/
+    font-family: var(--secondaryFont-family);
+    font-size: var(--intermediateFont-size);
+}
+
+#infoText .infoContent {
+    /*--Outside Spacing--*/
+    margin-top: 1em;
+    margin-left: 5em;
+
+    /*--Text Formating--*/
+    font-family: var(--secondaryFont-family);
+    font-size: var(--basicFont-size);
+
+}

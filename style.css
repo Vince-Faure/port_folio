@@ -47,7 +47,7 @@
     /*--GLOBAL FONTS-styles-*/
     --basicFont-weight: "normal";
     --basicFont-size: 18px;
-    --intermediateFont-size:1.5em;
+    --intermediateFont-size: 1.5em;
     --middleFont-size: 2em;
     --bigFont-size: 4em;
     --colorFront-bright: #DFE0DF;
@@ -76,12 +76,11 @@ h1 {
     font-size: var(--bigFont-size);
 }
 
-h2
- {
+h2 {
     font-size: var(--middleFont-size);
 }
 
-h3{
+h3 {
 
     font-size: var(--basicFont-size);
 
@@ -382,116 +381,72 @@ main::-webkit-scrollbar {
     background-color: transparent;
 }
 
-/*--text Area illustrationArea--*/
 
-.textArea,
-.illustrationArea {
+
+/*--MainSection Presentation/Informations/Loisirs--*/
+.subMainTextSection {
+    /*--Sizing--*/
+    width: 98%;
+    height: 90%;
 
     /*--Outside Spacing--*/
-    margin: 0.2em;
-
-
-    /*--Border Formating--*/
-    border-radius: 14px;
-
-
-}
-
-.textArea {
-    
-    /*--Display--*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /*--Text Formating--*/
-    font-family: var(--secondaryFont-family);
-    /*--Inside Spacing--*/
-    padding: 2em;
-}
-
-.textArea h3 {
-    /*--Outside Spacing--*/
-    margin-bottom: 2em;
-    font-size: var(--intermediateFont-size);
-
-}
-
-.textArea p {
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0.5em 0em 0.5em  1em;
-   
-
-}
-
-.subMainSection .textArea p{
-
-    font-size: 1em;;
-}
-
-.subMainSection .textArea h3 {
-    font-size: 1.5em;
- 
-
-}
-
-/*--MainSection Presentation--*/
-#presentation{
-    height:90%;
-    border: var(--GlobalBorder-styleLight);
-    border-radius: 14px;
     margin-top: 1em;
-    
     margin-left: auto;
     margin-right: auto;
-   
+
+    /*--Border Formating--*/
+    border: var(--GlobalBorder-styleLight);
+    border-radius: 14px;
 }
 
-#presText {
-
-    margin-top: 4em;
-
+.subText {
+    /*--Sizing--*/
     width: 80%;
     height: 60%;
+
+    /*--Outside Spacing--*/
+    margin-top: 4em;
+
+    /*--Text Formating--*/
     color: var(--mainColor-Accent_Color);
-    
+
 }
-#presText #introPres{
-    
+
+ .subTitle {
+    /*--Outside Spacing--*/
+    margin-top: 1em;
+    margin-left: 3em;
+
+    /*--Text Formating--*/
     font-family: var(--secondaryFont-family);
     font-size: var(--intermediateFont-size);
-    margin-top: 1em ;
-    margin-left: 3em;
-    
 }
 
-#presText .contentPres{
+ .subContent{
+    /*--Outside Spacing--*/
+    margin-top: 1em;
+    margin-left: 5em;
 
+    /*--Text Formating--*/
     font-family: var(--secondaryFont-family);
     font-size: var(--basicFont-size);
-    margin-top: 1em ;
-    margin-left: 5em;
+
 }
 
 
-
-
-    
-
- 
 
 /*--MainSection Competences--*/
 /*--Compétences menu--*/
 
-#competences{
+#competences {
 
     /*--Display--*/
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.compRow{
+.compRow {
 
     /*--Display--*/
     display: flex;
@@ -500,7 +455,7 @@ main::-webkit-scrollbar {
 
     /*--Sizing--*/
     width: 100%;
-    height:calc(100%/3);
+    height: calc(100%/3);
 
     /*--Border Formating--*/
     border: none !important;
@@ -509,7 +464,8 @@ main::-webkit-scrollbar {
 
 
 
-.fullCell, .blankCell{
+.fullCell,
+.blankCell {
 
     /*--Sizing--*/
     width: calc(100%/3);
@@ -520,29 +476,29 @@ main::-webkit-scrollbar {
 
 }
 
-.fullCell{
+.fullCell {
 
     /*--Display--*/
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     /*--Sizing--*/
     width: 100%;
 
     /*--Outside Spacing--*/
     margin: 0;
-   
-    
+
+
 }
 
 
-.fullCell a{
+.fullCell a {
 
     /*--Display--*/
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     /*--Sizing--*/
     width: 50%;
@@ -556,16 +512,16 @@ main::-webkit-scrollbar {
 
     /*--Border Formating--*/
     border-radius: 14px !important;
-    
+
 }
 
-.fullCell a:hover{
+.fullCell a:hover {
 
     color: var(--colorFront-bright);
     background-color: var(--mainColor-Primary);
 }
 
-#titleCell{
+#titleCell {
 
     /*--Sizing--*/
     width: 50%;
@@ -576,12 +532,13 @@ main::-webkit-scrollbar {
     background-color: var(--mainColor-Primary_dark);
 }
 
-.blankCell{
+.blankCell {
 
     border: none;
     background-color: transparent !important;
 }
 
+/*--Compétences content--*/
 
 
 
@@ -591,16 +548,24 @@ main::-webkit-scrollbar {
 /*--Table--*/
 
 #chronologie {
-    margin: 0.2em;
-    width: 98%;
-    height: 95%;
+    /*--Sizing--*/
+    height: 90%;
+
+    /*--Outside Spacing--*/
+    margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
+
+    /*--Display--*/
     display: flex;
     flex-direction: column;
+
+    /*--Content Align--*/
     text-align: center;
+    
     /*--Colors--*/
     background-color: transparent !important;
+
     /*--Border Formating--*/
     border: var(--GlobalBorder-styleLight);
     border-radius: 14px;
@@ -671,7 +636,7 @@ footer {
     background-color: var(--mainColor-Primary_dark);
 }
 
-.footerSection{
+.footerSection {
 
     margin-left: 5em;
 }
