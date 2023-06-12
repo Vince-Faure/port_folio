@@ -76,9 +76,15 @@ h1 {
     font-size: var(--bigFont-size);
 }
 
-h2,
-h3 {
+h2
+ {
     font-size: var(--middleFont-size);
+}
+
+h3{
+
+    font-size: var(--basicFont-size);
+
 }
 
 
@@ -392,6 +398,11 @@ main::-webkit-scrollbar {
 }
 
 .textArea {
+    
+    /*--Display--*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     /*--Text Formating--*/
     font-family: var(--secondaryFont-family);
     /*--Inside Spacing--*/
@@ -401,6 +412,7 @@ main::-webkit-scrollbar {
 .textArea h3 {
     /*--Outside Spacing--*/
     margin-bottom: 2em;
+    font-size: var(--intermediateFont-size);
 
 }
 
@@ -424,6 +436,47 @@ main::-webkit-scrollbar {
 }
 
 /*--MainSection Presentation--*/
+#presentation{
+    height:90%;
+    border: var(--GlobalBorder-styleLight);
+    border-radius: 14px;
+    margin-top: 1em;
+    
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+#presText {
+
+    margin-top: 4em;
+
+    width: 80%;
+    height: 60%;
+    color: var(--mainColor-Accent_Color);
+    
+}
+#presText #introPres{
+    
+    font-family: var(--secondaryFont-family);
+    font-size: var(--intermediateFont-size);
+    margin-top: 1em ;
+    margin-left: 3em;
+    
+}
+
+#presText .contentPres{
+
+    font-family: var(--secondaryFont-family);
+    font-size: var(--basicFont-size);
+    margin-top: 1em ;
+    margin-left: 5em;
+}
+
+
+
+
+    
 
  
 
@@ -515,7 +568,8 @@ main::-webkit-scrollbar {
 #titleCell{
 
     /*--Sizing--*/
-    width: 80%;
+    width: 50%;
+    height: 6em;
 
     border-radius: 14px;
     color: var(--colorFront-bright);
@@ -615,4 +669,9 @@ footer {
     height: 8%;
     color: var(--colorFront-bright);
     background-color: var(--mainColor-Primary_dark);
+}
+
+.footerSection{
+
+    margin-left: 5em;
 }
