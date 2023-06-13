@@ -412,7 +412,7 @@ main::-webkit-scrollbar {
 
 }
 
- .subTitle {
+.subTitle {
     /*--Outside Spacing--*/
     margin-top: 1em;
     margin-left: 3em;
@@ -422,7 +422,7 @@ main::-webkit-scrollbar {
     font-size: var(--intermediateFont-size);
 }
 
- .subContent{
+.subContent {
     /*--Outside Spacing--*/
     margin-top: 1em;
     margin-left: 5em;
@@ -443,6 +443,7 @@ main::-webkit-scrollbar {
     /*--Display--*/
     display: flex;
     flex-direction: column;
+
 
 }
 
@@ -538,9 +539,99 @@ main::-webkit-scrollbar {
     background-color: transparent !important;
 }
 
-/*--Compétences content--*/
+/*--Compétences sesctions--*/
+
+.textArea {
+
+    /*--Positionning--*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*--Sizing--*/
+    width: 70%;
+    height: 90%;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto ;
+    margin-right: auto;
+ /*--Border Formating
+    border: var(--GlobalBorder-styleLight);
+    border-radius: 14px;--*/
+}
+.textAreaTitle {
+
+    /*--Display--*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
+
+    /*--Sizing--*/
+    width: max-content;
+    height: 2em;
+
+    /*--Inside Spacing--*/
+    padding: 0.3em;
+
+    /*--Text Formating--*/
+
+    color: var(--colorFront-bright);
+
+    font-size: var(--intermediateFont-size);
+
+    /*--Border Formating--*/
+    border: var(--GlobalBorder-styleLight);
+    border-radius: 14px !important;
+
+    /*--BackGround--*/
+    background-color: var(--mainColor-Primary);
+
+}
+
+.textAreaText {
+    /*--Display--*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: flex-start;
+    padding-left: 2em;
+
+    /*--Sizing--*/
+    width: 60%;
+    height: 90%;
+    
+
+}
+
+.textAreaText p{
+        /*--Text Formating--*/
+
+        color: var(--mainColor-Primary_dark);
+
+        font-size: var(--intermediateFont-size);
+}
+
+
+.illustrationArea {
+
+    /*--Positionning--*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /*--Sizing--*/
+    width:25%;
+    height: 90%;
+    border: var(--GlobalBorder-styleLight);
+
+}
 
 
 /*--MainSection Parcours--*/
@@ -562,7 +653,7 @@ main::-webkit-scrollbar {
 
     /*--Content Align--*/
     text-align: center;
-    
+
     /*--Colors--*/
     background-color: transparent !important;
 
@@ -607,7 +698,6 @@ thead th:nth-child(3) {
 
     width: 40%;
 }
-
 
 
 th,

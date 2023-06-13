@@ -8,6 +8,7 @@ draft zone
 /*--Sizing--*/
 /*--Colors--*/
 /*--Outside Spacing--*/
+/*--Inside Spacing--*/
  /*--Content Align--*/
  /*-- Overlap element--*/  
 
